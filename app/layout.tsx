@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     description: 'Find Your UNIBEN P-UTME Venue, Answers To P-UTME FAQs. From Kofa-X.',
     images: [
       {
-        url: '/preview.jpg', // The path to the image you placed in the /public directory
+        url: '/preview.png', // The path to the image you placed in the /public directory
         width: 1200,
         height: 630,
         alt: 'Find Your UNIBEN P-UTME Venue, Answers To P-UTME FAQs. From Kofa-X.', // A description of the image for accessibility
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Your Post UTME Helper',
     description: 'Find Your UNIBEN P-UTME Venue, Answers To P-UTME FAQs. From Kofa-X.',
-    images: ['/preview.jpg'],
+    images: ['/preview.png'],
   },
 };
 

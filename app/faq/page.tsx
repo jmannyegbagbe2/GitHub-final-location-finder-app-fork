@@ -10,48 +10,76 @@ import Link from "next/link"
 export default function FAQPage() {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false)
 
-  const faqs = [
-    {
-      question: "How accurate are the walking and driving times?",
-      answer:
-        "The walking and driving times are estimates based on Google Maps data and may vary depending on traffic conditions, weather, and your walking pace. We recommend allowing extra time for your journey to ensure you arrive at your examination venue on time.",
-    },
-    {
-      question: "What should I do if I can't find my examination venue?",
-      answer:
-        "If you're having trouble locating your venue, first double-check your examination slip for the correct venue name. You can also ask security personnel at any of the gates for directions.",
-    },
-    {
-      question: "Are all the gates accessible 24/7?",
-      answer:
-        "Gate accessibility may vary depending on university policies and security protocols. The main gate typically has the longest operating hours. We recommend checking with university security or arriving during regular daytime hours for the best access.",
-    },
-    {
-      question: "Can I use public transportation to reach these venues?",
-      answer:
-        "Yes, public transportation options like buses and motorcycles (okada) are available around the university area. However, walking or private transportation might be more reliable for ensuring you arrive on time for your examination.",
-    },
-    {
-      question: "What if the route shown doesn't match what I see on the ground?",
-      answer:
-        "Routes and campus layouts can change due to construction or other factors. If you encounter discrepancies, ask for directions from university staff, security personnel, or other students who are familiar with the current campus layout.",
-    },
-    {
-      question: "Should I visit the venue before my examination day?",
-      answer:
-        "Yes, we highly recommend visiting your examination venue at least one day before your exam. This will help you familiarize yourself with the route, estimate travel time, and reduce stress on the actual examination day.",
-    },
-    {
-      question: "What items should I bring on examination day?",
-      answer:
-        "Bring your examination slip, valid identification (preferably the same ID used during registration), writing materials as specified in your exam instructions, and arrive at least 30 minutes before the scheduled time.",
-    },
-    {
-      question: "Are there parking facilities available at the venues?",
-      answer:
-        "Parking availability varies by venue and may be limited during examination periods. We recommend using public transportation or arranging to be dropped off near the venue rather than relying on finding parking spaces.",
-    },
-  ]
+    const faqs = [
+  {
+    question: "Will there be buses or cabs around campus?",
+    answer:
+      "Yes, there will be both buses and cabs. Cabs usually cost about 200 Naira to go to any location on campus.",
+  },
+  {
+    question: "How are the exams going to be conducted?",
+    answer:
+      "You are required to line up at least 30 minutes before your exam to enter the hall. Security personnel will check your exam slip to confirm your identity, and you will be screened before entering the exam hall.",
+  },
+  {
+    question: "What method will be used to write the exams?",
+    answer:
+      "The exams will be computer-based (CBT), meaning you'll answer all your questions on the computer assigned to you.",
+  },
+  {
+    question: "What if my computer shuts down or malfunctions?",
+    answer:
+      "If your computer shuts down or malfunctions, immediately inform any invigilator or security personnel. They will assist you so you can resume your exam as quickly as possible. Please note that your time keeps running until the issue is resolved.",
+  },
+  {
+    question: "What are the do's and don'ts during the exam?",
+    answer: `
+1. Do not press the submit button until you are done with the exam.  
+2. Avoid talking during the exam, as you may be sent out of the hall.  
+3. Pay close attention to the instructions given by the invigilators.  
+    `,
+  },
+  {
+    question: "How accurate are the walking and driving times?",
+    answer:
+      "The walking and driving times are estimates based on Google Maps data and may vary depending on traffic, weather, and walking pace. Allow extra time to ensure you arrive on time.",
+  },
+  {
+    question: "What should I do if I can't find my examination venue?",
+    answer:
+      "Double-check your examination slip for the correct venue name. You can also ask security personnel at any of the gates for directions.",
+  },
+  {
+    question: "Are all the gates accessible 24/7?",
+    answer:
+      "Gate accessibility depends on university policies and security protocols. The main gate usually has the longest operating hours. For convenience, plan to arrive during regular daytime hours.",
+  },
+  {
+    question: "Can I use public transportation to reach these venues?",
+    answer:
+      "Yes, buses and cabs are available around the university. However, walking or private transport may be more reliable for getting to your exam venue on time.",
+  },
+  {
+    question: "What if the route shown doesn't match what I see?",
+    answer:
+      "Campus routes can change due to construction or other factors. If this happens, ask for directions from security personnel, staff, or students familiar with the current layout.",
+  },
+  {
+    question: "Should I visit the venue before my exam day?",
+    answer:
+      "Yes, it is highly recommended to visit your venue at least one day before your exam. This will help you familiarize yourself with the route, estimate travel time, and reduce stress on exam day.",
+  },
+  {
+    question: "What items should I bring on exam day?",
+    answer:
+      "Bring your examination slip, a valid ID (preferably the same one used during registration), and any writing materials specified in your exam instructions. Arrive at least 30 minutes before the scheduled time.",
+  },
+  {
+    question: "Are there parking facilities at the venues?",
+    answer:
+      "Parking availability varies by venue and is often limited during exam periods. It’s safer to use public transportation or arrange to be dropped off near the venue.",
+  },
+]
 
   return (
     <div className="min-h-screen relative overflow-hidden dark">
